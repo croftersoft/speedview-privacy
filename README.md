@@ -15,6 +15,7 @@ SpeedView ("appen") är en färddator- och körjournalsapplikation utvecklad av 
 Appen begär åtkomst till enhetens exakta platsdata (`ACCESS_FINE_LOCATION` och `ACCESS_COARSE_LOCATION`) uteslutande i realtid när appen är aktiv på skärmen för att:
 * Beräkna aktuell hastighet, maxhastighet, snitthastighet, körd sträcka, kompassriktning och höjd över havet.
 * Hämta start- och slutgatuadress vid sparande av en resa i den valfria körjournalen.
+* Hämta gällande hastighetsgräns för aktuell väg via OpenStreetMap (Overpass API) när automatisk fartgräns är aktiverad.
 
 Platsdata bearbetas endast lokalt på din enhet (samt via Androids inbyggda Geocoder-tjänst för adressuppslagning) och skickas aldrig till Croftersoft eller någon tredje part för spårning eller marknadsföring.
 
@@ -38,6 +39,7 @@ SpeedView ("the App") is a speedometer and trip log application developed by Cro
 The App accesses precise device location (`ACCESS_FINE_LOCATION` and `ACCESS_COARSE_LOCATION`) strictly while the App is in use in the foreground to:
 * Calculate current speed, maximum speed, average speed, trip distance, compass bearing, and altitude.
 * Retrieve start and end street addresses when saving a trip in the optional trip log.
+* Retrieve applicable speed limits for the current road via OpenStreetMap (Overpass API) when automatic speed limit detection is enabled.
 
 Location data is processed locally on your device (and via Android's built-in Geocoder service for street address lookup) and is never sent to Croftersoft or third parties for tracking or advertising.
 
